@@ -23,7 +23,7 @@ class CartForm extends React.Component{
     handleClick=(val)=>{
         this.setState(prevstate=>({
             cart:prevstate.cart.filter(item=>item.name!=val.name),
-            finalcart:prevstate.cart.filter(item=>item.name!=val.name)
+            finalcart:prevstate.finalcart.filter(item=>item.name!=val.name)
         }))
     }
     handleChange=(e)=>{
